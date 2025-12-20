@@ -1,0 +1,4 @@
+.vscode/
+
+# SQLite database
+*.db
