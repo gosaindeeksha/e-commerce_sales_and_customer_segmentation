@@ -17,5 +17,3 @@ SELECT COUNT(*) FROM staging_table;
 SELECT * FROM staging_table LIMIT 5;
 
 SELECT COUNT(*) AS Valid_Rows_Num FROM staging_table WHERE Quantity>0 AND UnitPrice>0;
-
-
