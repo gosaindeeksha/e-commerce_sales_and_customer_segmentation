@@ -2,11 +2,11 @@
 
 --1. Populating products dimension table
 INSERT INTO dim_products (product_id, product_description)
-SELECT StockCode AS product_id, 
+SELECT UPPER(StockCode) AS product_id, 
 MAX(Description) AS product_description -- MAX(Description) makes sure that there are no duplicated values of description
 FROM staging_table
 WHERE Quantity > 0 AND UnitPrice > 0 -- removing incorrect values
-GROUP BY StockCode;
+GROUP BY UPPER(StockCode);
 
 SELECT COUNT(*) FROM dim_products; --to check if data was imported correctly
 
