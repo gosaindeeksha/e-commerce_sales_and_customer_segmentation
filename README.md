@@ -63,7 +63,7 @@ Final segments:
 - Inactive High-Value  
 - Inactive Low-Value  
 
-###K-Means Clustering (Supporting Analysis)
+### K-Means Clustering (Supporting Analysis)
 K-Means clustering was used to:
 - Validate RFM segments
 - Identify extreme customer behavior
